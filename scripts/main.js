@@ -22,7 +22,7 @@ $(document).ready(function () {
             check = false;
         } else {
             $('.header__menu-mobile').animate({
-                top: '-100%'
+                top: '-150%'
             })
             check = true;
         }
