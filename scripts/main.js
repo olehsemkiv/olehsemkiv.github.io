@@ -4,17 +4,23 @@ $(document).ready(function () {
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500
-    });
+        autoplaySpeed: 1000,
+        responsive: [{
+            breakpoint: 560,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    })
     let check = true;
     $('.burger-btn').on('click', () => {
         // console.log('fdsfds');
-        if(check){
+        if (check) {
             $('.header__menu-mobile').animate({
                 top: 0
             })
             check = false;
-        } else{
+        } else {
             $('.header__menu-mobile').animate({
                 top: '-100%'
             })
